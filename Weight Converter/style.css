@@ -13,9 +13,9 @@ body{
 }
 
 .container{
-    width: 650px;
+    width: 750px;
     background-color: #8ACB88;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
@@ -30,10 +30,13 @@ body{
 
 .convertSection{
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .select{
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     border: none;
     outline: none;
@@ -43,10 +46,13 @@ body{
     color: #626868;
     font-weight: 600;
     margin-right: 10px;
+    font-size: 18px;
 } 
 .input{
     width: 25%;
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -54,7 +60,7 @@ body{
 }
 
 button{
-    padding: 5px 10px;
+    padding: 10px 15px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -63,6 +69,7 @@ button{
     color: #fff;
     background-color:#444554;
     margin: 0 10px;
+    font-size: 18px;
 }
 button:hover{
     background-color:#BFACB5;
