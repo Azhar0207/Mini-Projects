@@ -15,7 +15,7 @@ function convertNumber() {
 
   let inputOneEl = Number(inputOneEls);
 
-  if (inputOneEl != inputOneEl) {
+  if (inputOneEl != inputOneEl || inputOneEl <= 0) {
     alert("Please enter numbers only");
   } else if ((selectOptionOne == "kg") & (selectOptionTwo == "Pounds")) {
     let result = (inputOneEl * 2.20462).toFixed(2);
