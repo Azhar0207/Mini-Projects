@@ -8,12 +8,16 @@ function convertNumber() {
   const selcetFirst = document.getElementById("selcetOne");
   let selectOptionOne = document.getElementById("selectOne").value;
   let selectOptionTwo = document.getElementById("selectTwo").value;
-  let inputOneEl = document.getElementById("inputOne").value;
+  let inputOneEls = document.getElementById("inputOne").value;
   let inputTwoEl = document.getElementById("inputTwo");
   let resultDisplayOne = document.getElementById("weightConevrtedFrom");
   let resultDisplaytwo = document.getElementById("weightConevrtedTo");
 
-  if ((selectOptionOne == "kg") & (selectOptionTwo == "Pounds")) {
+  let inputOneEl = Number(inputOneEls);
+
+  if (inputOneEl != inputOneEl) {
+    alert("Please enter numbers only");
+  } else if ((selectOptionOne == "kg") & (selectOptionTwo == "Pounds")) {
     let result = (inputOneEl * 2.20462).toFixed(2);
     inputTwoEl.value = result;
   } else if ((selectOptionOne == "kg") & (selectOptionTwo == "Gram")) {
