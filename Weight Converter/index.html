@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Weight Converter</title>
   </head>
   <body>
     <div class="container">
       <h2>Weight Converter</h2>
       <div class="convertSection">
-        <select name="" id="selcetOne" class="select">
-        <option value="kg">kg</option>
-        <option value="lb">Pounds</option>
-        <option value="g">Gram</option>
-        <input type="text" id="inputOne" class="input"/>
-      </select>
+        <select name="" id="selectOne" class="select">
+          <option value="kg">kg</option>
+          <option value="Pounds">Pounds</option>
+          <option value="Gram">Gram</option>
+        </select>
+        <input
+          type="text"
+          id="inputOne"
+          class="input"
+          placeholder="Enter Number"
+        />
+        <button id="convertBtn">Converte</button>
 
-      <button id="convertBtn">Converte</button>
-      
-      <select name="" id="selcetTwo" class="select">
-        <option value="lb">Pounds</option>
-        <option value="g">Gram</option>
-        <option value="kg">kg</option>
-        <input type="text" id="inputTwo" class="input"/>
-      </select>
+        <select name="" id="selectTwo" class="select">
+          <option value="Pounds">Pounds</option>
+          <option value="Gram">Gram</option>
+          <option value="kg">kg</option>
+        </select>
+        <input type="text" id="inputTwo" class="input" readonly />
       </div>
-      <h3 id="resultDisplay">Your weight in <span id="weightConevrtedFrom"></span>is <span id="weightConevrtedTo"></span></h3>
-
+      <h3 id="resultDisplay">
+        Your weight converted from <span id="weightConevrtedFrom"></span> to
+        <span id="weightConevrtedTo"></span>
+      </h3>
     </div>
 
     <script src="script.js"></script>

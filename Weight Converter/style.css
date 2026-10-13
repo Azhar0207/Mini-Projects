@@ -77,3 +77,7 @@ h3{
     margin: 40px 0 25px 25px;
     color: #121291;
 }
+
+#weightConevrtedFrom, #weightConevrtedTo{
+    color: #d13a28
+}
