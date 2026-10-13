@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Weight Converter</title>
   </head>
   <body>
     <div class="container">
       <h2>Weight Converter</h2>
       <div class="convertSection">
-        <select name="" id="selcetOne">
+        <select name="" id="selcetOne" class="select">
         <option value="kg">kg</option>
         <option value="lb">Pounds</option>
         <option value="g">Gram</option>
-        <input type="text" id="inputOne" />
+        <input type="text" id="inputOne" class="input"/>
       </select>
+
       <button id="convertBtn">Converte</button>
-      <select name="" id="selcetOne">
+      
+      <select name="" id="selcetTwo" class="select">
         <option value="lb">Pounds</option>
         <option value="g">Gram</option>
         <option value="kg">kg</option>
-        <input type="text" id="inputOne" />
+        <input type="text" id="inputTwo" class="input"/>
       </select>
       </div>
       <h3 id="resultDisplay">Your weight in <span id="weightConevrtedFrom"></span>is <span id="weightConevrtedTo"></span></h3>
 
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
