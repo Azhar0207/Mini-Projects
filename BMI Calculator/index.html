@@ -1,28 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>BMI Calculator</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <h2> Body Mass Index (BMI) Calculator</h2>
-        
-        <div class="input-container">
-            <h4>Your Height (cm) :</h4>
-            <input type="text" id="height">
-            <h4>Your Weight (kg) :</h4>
-            <input type="text" id="weight"><br>
-            <button id="btn">Compute BMI</button><br>
+      <h2>Body Mass Index (BMI) Calculator</h2>
 
-            <input type="text" id="result" readonly>
-        </div>
-        <h3 id="final_result">Weight Condition : Normal Weight</h3>
+      <div class="input-container">
+        <h4>Your Height (cm) :</h4>
+        <input type="text" id="height" />
+        <h4>Your Weight (kg) :</h4>
+        <input type="text" id="weight" /><br />
+        <button id="btn">Compute BMI</button><br />
+
+        <input type="text" id="result" readonly />
+      </div>
+      <h3 id="display-result">
+        Weight Condition : <span id="weight-condition"></span>
+      </h3>
     </div>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
