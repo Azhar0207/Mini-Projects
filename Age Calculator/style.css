@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #97D7FF;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 600px;
+    background-color: #086288;
+    color:#fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+}
+
+h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.input{
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+    font-size: 20px;
+    cursor: pointer;
+}
+ input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+.btn{
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #FFEFC4;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    background-color: #e3cd8f;
+    /* color: #fff; */
+}
+
+.display{
+    margin-top: 25px;
+}
