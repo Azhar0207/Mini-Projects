@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.container{
+    width: 500px;
+    height: 250px;
+    background-color: slateblue;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    min-width: 400px;
+    padding: 70px 20PX;
+    margin: 5px;
+    color: #FFF;
+    position: relative;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -50PX;
+}
+
+.username{
+    font-family: 13px;
+    font-weight: 100;
+    margin-top: 30px;
+}
