@@ -1,14 +1,16 @@
-const clickEl = document.querySelector(".label");
+const clickEl = document.querySelector(".input");
+let bodyEl = document.querySelector("body");
 
-let toggleOn = false;
+clickEl.checked = false;
+
 clickEl.addEventListener("click", () => {
   changeColor();
 });
 
+changeColor();
+
 function changeColor() {
-  let bodyEl = document.querySelector("body");
-  toggleOn = !toggleOn;
-  if (toggleOn) {
+  if (clickEl.checked) {
     bodyEl.style.backgroundColor = "#000";
   } else {
     bodyEl.style.backgroundColor = "#fff";
